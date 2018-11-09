@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Creative CV</title>
+    <meta name="description" content="Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skils and experience." />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/aos.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/styles/main.css" rel="stylesheet">
+</head>
+
+<body id="top">
+    <header>
+        <div class="profile-page sidebar-collapse">
+            <nav class="navbar navbar-expand-lg fixed-top bg-primary">
+                <div class="container">
+                    <div class="navbar-translate">
+                        <a class="navbar-brand" href="/" rel="tooltip">Anmol Uppal</a>
+                        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-bar bar1"></span>
+                            <span class="navbar-toggler-bar bar2"></span>
+                            <span class="navbar-toggler-bar bar3"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link smooth-scroll" href="/#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link smooth-scroll" href="/#skill">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link smooth-scroll" href="/#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link smooth-scroll" href="/#experience">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link smooth-scroll" href="/#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- page content -->
+    <div class="section main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <h1>Magic Dict</h1>
+                    <p><b>Learning:</b> C++, Bit manipulation</p>
+                    <p><b>Duration:</b> 1 week</p>
+                    <p><b>License:</b> Open Source <a href="https://github.com/anmoluppal/MagicDict">[Github]</a> </p>
+                    <p><b>Objective:</b> Build a fast and minimal Data Structure to detect invalid dictionary words.</p>
+
+                    <p>This module was used as a filter for querying possible word suggestion/predictions for swipe user input inside keyboard. While working on in-house Swipe algorithm it was observed that traditional Trie DS takes considerable amount of time to check false words, so need for a minimal DS was seen which is faster and lightweight in detecting absolutely wrong query words. It works as a filter for the main Trie DS. If a given word fails to pass this filter then it is not queried upon the main Trie DS hence saving a lot of look-ups.</p>
+
+                    <p>Using some clever Bit-manipulation technique and properties of latin alphabets, we were able to fit this DS in just <b>4kb</b> making the lookups <b>50x</b> faster as compared to traditional Trie implementation.</p>
+
+                    <p>The MagicDict can have applications in real-time spell-checker, working as initial defense layer, reducing the number of queires on the main DS implementation, with negligible memory overhead.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/core/jquery.3.2.1.min.js"></script>
+    <script src="/js/core/popper.min.js"></script>
+    <script src="/js/core/bootstrap.min.js"></script>
+    <script src="/js/now-ui-kit.js?v=1.1.0"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>
